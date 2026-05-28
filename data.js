@@ -439,6 +439,226 @@ const testData = {
       ],
       "correcta": "b",
       "explicacion": "El documento señala que los tejidos/ropas combinan resortes (Springs) y amortiguadores (Dampers) en estructuras conocidas como \"Spring-damper\"."
+    },
+    {
+      "text": "¿Qué primitiva geométrica suele contener N-gons por defecto en sus tapas?",
+      "options": [
+        "a) El cilindro en sus bases planas.",
+        "b) La esfera en su ecuador principal.",
+        "c) El toroide en sus uniones curvas.",
+        "d) El cubo en todas sus seis caras."
+      ],
+      "correcta": "a",
+      "explicacion": "El cilindro por defecto usa un n-gon para rellenar la tapa superior y la tapa inferior, lo cual debe tenerse en cuenta en la topología."
+    },
+    {
+      "text": "¿Cuál es la topología ideal para evitar problemas al deformar un modelo 3D?",
+      "options": [
+        "a) Utilizar exclusivamente caras formadas por cinco vértices.",
+        "b) Formar polígonos con tres o cuatro vértices como máximo.",
+        "c) Construir el objeto usando uniones n-gons generalizadas.",
+        "d) Eliminar los quads para usar un poligonaje muy complejo."
+      ],
+      "correcta": "b",
+      "explicacion": "La topología ideal exige usar triángulos (3 vértices) o quads (4 vértices), evitando en lo posible los N-gons."
+    },
+    {
+      "text": "¿Qué operación booleana conserva únicamente la parte común o compartida entre dos mallas?",
+      "options": [
+        "a) La operación conocida como Unión booleana (AND).",
+        "b) La operación conocida como Intersección (OR).",
+        "c) La operación conocida como Diferencia (NOT).",
+        "d) La operación conocida como Sustracción total."
+      ],
+      "correcta": "b",
+      "explicacion": "La operación booleana de Intersección (OR) conserva únicamente el volumen compartido por los objetos."
+    },
+    {
+      "text": "¿En qué consiste el proceso de retopología en el flujo de trabajo de modelado 3D?",
+      "options": [
+        "a) Crear una malla optimizada encima de una escultura digital densa.",
+        "b) Aplicar un suavizado constante a una malla de muy baja resolución.",
+        "c) Eliminar todos los mapas de normales generados durante el esculpido.",
+        "d) Subdividir la geometría base para añadir cientos de nuevos vértices."
+      ],
+      "correcta": "a",
+      "explicacion": "La retopología consiste en crear una malla optimizada y animable sobre una escultura de alta densidad de polígonos."
+    },
+    {
+      "text": "¿Cuál es un problema común al modelar empleando un sistema de superficies NURBS?",
+      "options": [
+        "a) Generan una malla que siempre está compuesta por n-gons.",
+        "b) Suavizan el modelo pero impiden aplicar rotaciones básicas.",
+        "c) Son muy difíciles de interconectar y mantener continuidad.",
+        "d) Requieren siempre topologías de ocho lados para funcionar."
+      ],
+      "correcta": "c",
+      "explicacion": "Los parches NURBS presentan serios problemas de interconexión y mantenimiento de continuidad geométrica."
+    },
+    {
+      "text": "¿Para qué tipo de malla resulta más adecuado el algoritmo de subdivisión de Catmull-Clark?",
+      "options": [
+        "a) Para mallas formadas completamente por n-gons irregulares.",
+        "b) Para mallas basadas estrictamente en curvas spline 2D puras.",
+        "c) Para mallas compuestas mayoritariamente por triángulos simples.",
+        "d) Para mallas compuestas mayoritariamente por quads o cuadriláteros."
+      ],
+      "correcta": "d",
+      "explicacion": "El algoritmo Catmull-Clark es el mejor y más óptimo esquema para realizar subdivisión en mallas basadas en quads."
+    },
+    {
+      "text": "Según la categorización de Blender, ¿a qué grupo pertenece un modificador de dinámicas de fluidos?",
+      "options": [
+        "a) Al grupo de modificadores categorizados como de tipo Generar.",
+        "b) Al grupo de modificadores categorizados como de tipo Simular.",
+        "c) Al grupo de modificadores categorizados como de tipo Deformar.",
+        "d) Al grupo de modificadores categorizados como de tipo Modificar."
+      ],
+      "correcta": "b",
+      "explicacion": "Blender agrupa las dinámicas y físicas dentro de la categoría Simular, que incluye herramientas de simulación."
+    },
+    {
+      "text": "¿Qué acción realiza el deformador de alcance global conocido popularmente como 'Taper'?",
+      "options": [
+        "a) Retuerce fuertemente la geometría alrededor de su eje local.",
+        "b) Afina o afila la malla geométrica a lo largo de una dirección.",
+        "c) Dobla la estructura general del objeto formando un arco visible.",
+        "d) Aplasta la geometría sobre sí misma generando arrugas densas."
+      ],
+      "correcta": "b",
+      "explicacion": "El deformador Taper se encarga de afilar o estrechar la forma global de la geometría a lo largo de un eje específico."
+    },
+    {
+      "text": "¿Qué caracteriza principalmente a las deformaciones de forma libre o FFD (Freeform Deformations)?",
+      "options": [
+        "a) Emplean una jaula poligonal envolvente de geometría compleja.",
+        "b) Emplean una rejilla o lattice básica como objeto de control.",
+        "c) Utilizan múltiples curvas tridimensionales de tipo arbitrario.",
+        "d) Requieren estrictamente coordenadas baricéntricas positivas."
+      ],
+      "correcta": "b",
+      "explicacion": "Los deformadores FFD utilizan una rejilla tridimensional (lattice) para deformar el espacio en el que se ubica el objeto."
+    },
+    {
+      "text": "¿Qué tipo de coordenadas ponderadas de jaula incluye información paramétrica de las caras?",
+      "options": [
+        "a) Las coordenadas denominadas de tipo Harmonic regulares.",
+        "b) Las coordenadas denominadas de tipo Mean-value comunes.",
+        "c) Las coordenadas denominadas de tipo Green coordinates.",
+        "d) Las coordenadas denominadas de tipo Positive MVC básicas."
+      ],
+      "correcta": "c",
+      "explicacion": "Las Green coordinates son coordenadas ponderadas que utilizan información tanto de los vértices como de las caras de la jaula."
+    },
+    {
+      "text": "¿Cómo funcionan los deformadores espaciales conocidos en el entorno 3D como 'Wires'?",
+      "options": [
+        "a) Utilizan una matriz global que afecta todos los puntos de la malla.",
+        "b) Emplean curvas 3D arbitrarias para generar una deformación suave.",
+        "c) Aplican complejas funciones armónicas sobre una malla base cerrada.",
+        "d) Dependen única y exclusivamente de las coordenadas baricéntricas."
+      ],
+      "correcta": "b",
+      "explicacion": "Los deformadores Wire se basan en curvas tridimensionales arbitrarias; la deformación decrece según la distancia a dicha curva."
+    },
+    {
+      "text": "¿Cuál de estas afirmaciones describe la Ley de Inercia de Newton aplicable a un simulador físico?",
+      "options": [
+        "a) Todo cuerpo en simulación mantiene su estado si no actúan fuerzas.",
+        "b) La aceleración de un objeto virtual es igual al cuadrado de su masa.",
+        "c) Si se ejerce una fuerza intensa, se recibe una onda perpendicular.",
+        "d) El momento lineal siempre se disipa tras cualquier colisión rápida."
+      ],
+      "correcta": "a",
+      "explicacion": "La Ley de Inercia postula que un cuerpo conservará su estado de reposo o movimiento continuo a menos que intervenga una fuerza."
+    },
+    {
+      "text": "En una simulación de físicas, ¿qué variable se ve afectada de manera directa por un impulso?",
+      "options": [
+        "a) La aceleración general del sistema mecánico de forma muy gradual.",
+        "b) La posición original del objeto virtual instantáneamente en el eje.",
+        "c) La velocidad de la partícula o cuerpo simulado de forma repentina.",
+        "d) La masa total o el volumen del cuerpo de manera completamente fija."
+      ],
+      "correcta": "c",
+      "explicacion": "Un impulso es una fuerza inmensa en un intervalo temporal minúsculo, lo que se traduce en un cambio instantáneo de velocidad."
+    },
+    {
+      "text": "Si una colisión física entre dos cuerpos posee una configuración de elasticidad de valor cero, ¿qué ocurre?",
+      "options": [
+        "a) El objeto rebotará con una velocidad inicial fuertemente duplicada.",
+        "b) El objeto atravesará el obstáculo sin detener su movimiento inicial.",
+        "c) El objeto se detendrá por completo al perder toda su energía física.",
+        "d) El objeto cambiará de dirección conservando su velocidad original."
+      ],
+      "correcta": "c",
+      "explicacion": "Una elasticidad de 0 significa que la colisión es inelástica y el objeto absorbe el impacto perdiendo su energía y velocidad."
+    },
+    {
+      "text": "¿Qué característica distingue al popular método de integración Forward Euler usado en animaciones?",
+      "options": [
+        "a) Es altamente preciso para simular todo tipo de movimientos bruscos.",
+        "b) Evalúa la posición basándose únicamente en el estado futuro lejano.",
+        "c) Es bastante rápido pero resulta impreciso ante fuerzas muy variables.",
+        "d) Requiere de sistemas matriciales complejos que ralentizan el render."
+      ],
+      "correcta": "c",
+      "explicacion": "El método Forward Euler es muy eficiente computacionalmente, pero puede volverse inestable o impreciso ante variaciones bruscas."
+    },
+    {
+      "text": "¿Qué tipo de comportamiento suele simular el campo de fuerza 'Boid' en los sistemas de partículas?",
+      "options": [
+        "a) La leve resistencia que produce el entorno a objetos en caída libre.",
+        "b) La intensa atracción física o magnética generada entre dos cuerpos.",
+        "c) La inteligencia colectiva y movimiento grupal de bandadas de aves.",
+        "d) La fuerte repulsión elástica fundamentada por la antigua ley Hooke."
+      ],
+      "correcta": "c",
+      "explicacion": "El campo de fuerza Boid se utiliza expresamente para emular la inteligencia y el movimiento coordinado de enjambres o bandadas."
+    },
+    {
+      "text": "¿Qué es la librería tecnológica OpenVDB y con qué propósito se integra en programas de 3D?",
+      "options": [
+        "a) Un formato propietario cerrado pensado para exportar los esqueletos.",
+        "b) Una librería de código abierto especializada en volumen y simulado.",
+        "c) Una herramienta paramétrica para crear topologías de tipo celular.",
+        "d) Un potente software utilizado en la generación de mapas de relieve."
+      ],
+      "correcta": "b",
+      "explicacion": "OpenVDB es una librería desarrollada por Dreamworks orientada a almacenar y exportar simulación volumétrica compleja como humo o fuego."
+    },
+    {
+      "text": "¿Qué técnica de modelado parte de repetir un perfil 2D a lo largo de una trayectoria tridimensional?",
+      "options": [
+        "a) Extrusión plana distribuida a lo largo de varios ejes ortogonales.",
+        "b) Subdivisión recurrente de la geometría hasta crear formas nuevas.",
+        "c) Operación de tipo Solevado (Loft) mediante trayectorias en curva.",
+        "d) Revolución estándar alrededor de un único punto de pivote común."
+      ],
+      "correcta": "c",
+      "explicacion": "El Solevado o Loft toma un contorno o perfil 2D y lo extruye repitiéndolo a lo largo del recorrido dictado por una curva 3D."
+    },
+    {
+      "text": "¿Qué gran ventaja introdujeron las denominadas superficies de subdivisión frente a las previas NURBS?",
+      "options": [
+        "a) Aseguran generar topologías hechas exclusivamente con triángulos.",
+        "b) Solucionan los graves problemas de interconexión en las superficies.",
+        "c) Limitan todas las mallas a una única resolución para ahorrar memoria.",
+        "d) Eliminan por completo la urgencia de utilizar las texturas UV visuales."
+      ],
+      "correcta": "b",
+      "explicacion": "Las Subdivision Surfaces permitieron trabajar con topologías irregulares sin perder continuidad suave, resolviendo la interconexión NURBS."
+    },
+    {
+      "text": "¿Por qué motivo es necesario aplicar un efecto artificial de 'Motion Blur' en un render 3D?",
+      "options": [
+        "a) Porque los motores de render 3D no emulan la obturación natural.",
+        "b) Porque las simulaciones anulan automáticamente los mapas tonales.",
+        "c) Porque los sistemas de nodos limitan la velocidad física calculable.",
+        "d) Porque el enfoque focal contrarresta por completo el nivel de blur."
+      ],
+      "correcta": "a",
+      "explicacion": "A diferencia de las cámaras físicas, el renderizado de gráficos 3D no captura la estela de movimiento (obturación), por lo que debe simularse."
     }
   ],
   "MAC_Tema_3_Tests.txt": [
@@ -903,6 +1123,226 @@ const testData = {
       ],
       "correcta": "a",
       "explicacion": "El apunte señala que las texturas por imágenes \"Tienen el problema de generar 'cortes' (seams) al envolver el modelo 3D\"."
+    },
+    {
+      "text": "¿Qué función principal cumple un Shader (Sombreador) en el entorno del 3D?",
+      "options": [
+        "a) Un programa que calcula el color de cada píxel en función de la luz y material.",
+        "b) Un algoritmo que genera formas geométricas complejas en el modelo tridimensional.",
+        "c) Un conjunto de nodos que solo se utiliza para gestionar texturas de baja calidad.",
+        "d) Un complemento del sistema que sirve exclusivamente para el renderizado final 2D."
+      ],
+      "correcta": "a",
+      "explicacion": "El shader es el software que procesa cómo los materiales, luces y sombras afectan el color de cada píxel final."
+    },
+    {
+      "text": "¿Cuál es la característica principal de los Materiales Físicos Básicos?",
+      "options": [
+        "a) Se caracterizan por emplear únicamente mapas de texturas fotográficas de alta calidad.",
+        "b) Se definen mediante propiedades físicas simples como rugosidad, transparencia y el IOR.",
+        "c) Siempre requieren del uso de texturas procedurales para generar volumen y transparencia.",
+        "d) Se aplican exclusivamente a elementos orgánicos utilizando mapas de desplazamiento real."
+      ],
+      "correcta": "b",
+      "explicacion": "No utilizan texturas, sino que se configuran con propiedades como color base, IOR y transparencia (ej. plástico)."
+    },
+    {
+      "text": "¿Qué ventaja principal destacan en el uso de texturas procedurales?",
+      "options": [
+        "a) Permiten resoluciones infinitas, no se pixelan y evitan los cortes en su repetición.",
+        "b) Facilitan la creación rápida de arañazos y suciedad específica con un alto realismo.",
+        "c) Su principal ventaja es que requieren muy pocos conocimientos matemáticos avanzados.",
+        "d) Generan relieves reales en la geometría sin utilizar mapas de desplazamiento complejos."
+      ],
+      "correcta": "a",
+      "explicacion": "Al ser algoritmos matemáticos, pueden escalarse sin perder calidad ni generar efecto sierra o costuras."
+    },
+    {
+      "text": "¿Cuál de las siguientes es una desventaja de las texturas procedurales?",
+      "options": [
+        "a) Muestran problemas de cortes visibles al envolver repetidamente modelos complejos en 3D.",
+        "b) Requieren de obligatoriamente de mapas UV perfectos para lograr resultados aceptables.",
+        "c) Presentan gran dificultad para poder modelar detalles finos y tienen complejidad matemática.",
+        "d) Producen pixelados evidentes siempre que la cámara realiza un acercamiento a las texturas."
+      ],
+      "correcta": "c",
+      "explicacion": "Son difíciles para recrear elementos muy específicos o detallados, y requieren fórmulas matemáticas complejas."
+    },
+    {
+      "text": "¿Qué problema frecuente suele presentarse con el uso de Texturizados (Imágenes)?",
+      "options": [
+        "a) Proporcionan gran realismo en suciedad, pero pueden generar cortes al aplicarse al 3D.",
+        "b) Generan superficies continuas sin costuras gracias a su resolución matemática infinita.",
+        "c) Solo pueden emplearse en motores de renderizado en tiempo real orientados a videojuegos.",
+        "d) Modifican directamente la cantidad de polígonos del modelo para adaptarse al realismo."
+      ],
+      "correcta": "a",
+      "explicacion": "Usar fotografías da gran realismo, pero genera el problema de los cortes o 'seams' al envolver una malla."
+    },
+    {
+      "text": "Dentro de los Materiales PBR, ¿qué función tiene el mapa Base Color o Albedo?",
+      "options": [
+        "a) Representa el nivel de intensidad lumínica que todo el material absorbe en las oquedades.",
+        "b) Corresponde al color puro del material y no incluye ninguna sombra ni brillo incorporado.",
+        "c) Simula el efecto visual de pequeños detalles de relieve sobre superficies metalizadas lisas.",
+        "d) Determina de manera absoluta qué porcentaje de luz atravesará cualquier material orgánico."
+      ],
+      "correcta": "b",
+      "explicacion": "El Albedo es el color original del material desprovisto de información de sombras y brillos cocinados."
+    },
+    {
+      "text": "¿Qué comportamiento tiene el mapa 'Normal' sobre una superficie 3D?",
+      "options": [
+        "a) Transforma la geometría original de la malla para añadir un volumen tridimensional real.",
+        "b) Simula detalles de relieve interaccionando con la iluminación sin alterar la geometría.",
+        "c) Determina únicamente si un material específico es de carácter netamente metálico o no.",
+        "d) Oscurece las intersecciones poligonales para emular múltiples sombras en sus oquedades."
+      ],
+      "correcta": "b",
+      "explicacion": "Simula variaciones en el relieve a través de la luz, sin llegar a deformar los polígonos del modelo real."
+    },
+    {
+      "text": "¿Qué define principalmente el mapa 'Metallic' en la configuración PBR?",
+      "options": [
+        "a) Configura qué zonas exactas del material tienen un comportamiento dieléctrico o de metal.",
+        "b) Aumenta significativamente el índice de refracción general cuando el material es cristal.",
+        "c) Establece un mapa de relieve complejo que interactúa con las diversas luces especulares.",
+        "d) Emula la forma en la que la luz rebota bajo la superficie creando brillos traslúcidos."
+      ],
+      "correcta": "a",
+      "explicacion": "Establece, usualmente en blanco y negro, si una zona de la textura es un metal o un material dieléctrico."
+    },
+    {
+      "text": "¿Para qué sirve el mapa 'Roughness' (Rugosidad)?",
+      "options": [
+        "a) Se emplea principalmente para colorear aquellas zonas que nunca reciben ninguna luz.",
+        "b) Regula la difusión de los rayos de luz y ayuda a representar superficies mate o pulidas.",
+        "c) Permite alterar la topología de la malla añadiendo múltiples irregularidades poligonales.",
+        "d) Produce un marcado efecto de traslucidez que permite ver los fondos a través del objeto."
+      ],
+      "correcta": "b",
+      "explicacion": "Controla qué tan dispersa sale la luz reflejada, ideal para marcar polvo, rayaduras y superficies mate."
+    },
+    {
+      "text": "¿Qué particularidad tiene el mapa 'Height' o 'Displacement' respecto a otros?",
+      "options": [
+        "a) Altera la reflexión luminosa constante sin llegar a deformar en absoluto la malla visual.",
+        "b) Modifica varios canales de luz ambiental para oscurecer las hendiduras más profundas.",
+        "c) Deforma la malla geométrica real de la superficie y requiere de un alto consumo de recursos.",
+        "d) Crea una gran ilusión óptica de profundidad mediante el uso combinado de vectores de luz."
+      ],
+      "correcta": "c",
+      "explicacion": "A diferencia del mapa normal, este sí desplaza los vértices reales de la malla y por ello consume muchos recursos."
+    },
+    {
+      "text": "¿Qué efecto logra el mapa 'Ambient Occlusion' (AO)?",
+      "options": [
+        "a) Utiliza diferentes mapas en escala de grises para simular sombras de contacto marcadas.",
+        "b) Altera el color base general del objeto para volverlo completamente negro y sin brillos.",
+        "c) Desplaza toda la geometría ubicada en zonas cóncavas para dotarlas de un gran realismo.",
+        "d) Difumina completamente los rayos de luz directos que rebotan contra superficies pulidas."
+      ],
+      "correcta": "a",
+      "explicacion": "El Ambient Occlusion refuerza las sombras en esquinas, oquedades y áreas de contacto entre superficies."
+    },
+    {
+      "text": "¿Qué simula la técnica Subsurface Scattering (SSS)?",
+      "options": [
+        "a) Crea múltiples efectos de relieve simulado sobre superficies imitando desgastes de metales.",
+        "b) Recrea la gran refracción de luz cuando logra atravesar materiales traslúcidos como cera.",
+        "c) Genera sombras grises artificiales muy marcadas en todas las uniones entre dos polígonos.",
+        "d) Multiplica notablemente la cantidad de reflejos producidos por una superficie reflectante."
+      ],
+      "correcta": "b",
+      "explicacion": "Imita el paso y dispersión de la luz a través de superficies translúcidas como piel, cera o mármol."
+    },
+    {
+      "text": "En el contexto de Blender, ¿qué herramienta central se usa para crear materiales complejos?",
+      "options": [
+        "a) El sistema Shader Editor es el que permite organizar las capas de texturas preexistentes.",
+        "b) El editor principal para crear materiales basados en sistemas de nodos es Shader Editor.",
+        "c) Para cambiar directamente la textura activa se debe emplear siempre el atajo de teclado W.",
+        "d) La función exclusiva Node Wrangler se emplea únicamente para optimizar mallas orgánicas."
+      ],
+      "correcta": "b",
+      "explicacion": "El Shader Editor permite construir materiales avanzados conectando distintos nodos."
+    },
+    {
+      "text": "¿Qué editor de materiales moderno utiliza 3DS Max basado en nodos?",
+      "options": [
+        "a) El editor Slate Material Editor es el sistema más moderno que funciona mediante nodos.",
+        "b) El antiguo Compact Material Editor se usa exclusivamente para diseñar los mapas de UVW.",
+        "c) Ambos sistemas de materiales exigen que el usuario domine lenguajes matemáticos puros.",
+        "d) El tradicional Compact Material solo logra aplicar texturas procedentes de una cámara."
+      ],
+      "correcta": "a",
+      "explicacion": "Slate Material Editor es la herramienta moderna de nodos en 3DS Max, frente a su predecesor Compact Material Editor."
+    },
+    {
+      "text": "En el mapeado UVW, ¿qué representa la coordenada W?",
+      "options": [
+        "a) Las coordenadas U y V corresponden al espacio tridimensional de sombras generadas en AO.",
+        "b) La letra W representa siempre el eje Z y se utiliza para animaciones y procedurales.",
+        "c) El término general UVW hace referencia a tres famosos motores de renderizados modernos.",
+        "d) La coordenada en U sirve exclusivamente para escalar grandes texturas fotográficas 8K."
+      ],
+      "correcta": "b",
+      "explicacion": "W es la coordenada equivalente al eje Z y suele utilizarse para efectos de animación y mapas procedurales."
+    },
+    {
+      "text": "¿Cuándo resulta más idóneo utilizar el mapeado primitivo 'Planar' (Plano)?",
+      "options": [
+        "a) Es siempre la mejor opción posible para cubrir cualquier elemento esférico sin pellizcos.",
+        "b) Resulta especialmente útil cuando la cara del modelo es paralela al plano de proyección.",
+        "c) Se basa en repetir un simple patrón infinito a lo largo de las variadas caras cilíndricas.",
+        "d) Este método envuelve toda la malla a la perfección logrando evitar los cortes repetitivos."
+      ],
+      "correcta": "b",
+      "explicacion": "El mapeado planar proyecta la textura desde un lado y es perfecto si la malla es plana y paralela."
+    },
+    {
+      "text": "¿Qué problema suele ocurrir al aplicar un mapeado 'Esférico' en un modelo?",
+      "options": [
+        "a) Permite solucionar velozmente los problemas de cortes y de costuras en los modelos.",
+        "b) Solo debe asignarse sobre formas completamente planas que necesiten muchos polígonos.",
+        "c) Consigue envolver casi todo el modelo hasta llegar a los polos creando zonas pellizcadas.",
+        "d) Es el único método de mapeado primitivo que evita totalmente la generación de sombras."
+      ],
+      "correcta": "c",
+      "explicacion": "Al envolver la esfera, la textura se concentra y deforma en los polos, creando el clásico 'pellizco'."
+    },
+    {
+      "text": "¿Cuál es el propósito del mapeado Unwrap UVW?",
+      "options": [
+        "a) Es la técnica que busca desenvolver mallas complejas sobre planos 2D mitigando tensiones.",
+        "b) Se trata de un mecanismo procedimental que auto-genera texturas sobre todo el polígono 3D.",
+        "c) Representa un modificador exclusivo que suaviza los polígonos cuidando mapas especulares.",
+        "d) Consiste en el procedimiento elemental para combinar varias texturas en un único elemento."
+      ],
+      "correcta": "a",
+      "explicacion": "Se utiliza para aplanar modelos tridimensionales complejos en 2D, controlando las deformaciones y estiramientos."
+    },
+    {
+      "text": "¿De qué depende de manera crítica que el Unwrap UVW funcione adecuadamente?",
+      "options": [
+        "a) La eficiencia real de este proceso radica de usar texturas matemáticas sin ruido visual.",
+        "b) Solamente puede lograr el éxito cuando un mapeado cúbico fue asignado a todo el polígono.",
+        "c) Este complejo desenvolvimiento depende críticamente de tener una buena topología de malla.",
+        "d) Todo el resultado resulta muy independiente de las características poligonales del objeto."
+      ],
+      "correcta": "c",
+      "explicacion": "Si la geometría (topología) del modelo es mala o desordenada, será extremadamente difícil realizar un buen desenvolvimiento UVW."
+    },
+    {
+      "text": "¿Cuál es la principal dificultad del mapeado primitivo 'Cilíndrico'?",
+      "options": [
+        "a) Garantiza que se puedan generar envoltorios perfectos arriba y abajo de la misma esfera.",
+        "b) Envuelve adecuadamente las caras laterales del modelo tridimensional dificultando tapas.",
+        "c) Permite proyectar grandes mapas fotográficos directamente en intersecciones cilíndricas.",
+        "d) Trabaja con facilidad extrema sobre múltiples caras planas apuntando a distintos ángulos."
+      ],
+      "correcta": "b",
+      "explicacion": "El mapeado cilíndrico funciona muy bien en los lados de un cilindro, pero es difícil mapear correctamente las bases superior e inferior (las tapas)."
     }
   ],
   "MAC_Tema_4_Tests.txt": [
@@ -1345,6 +1785,226 @@ const testData = {
       ],
       "correcta": "b",
       "explicacion": "Se expone en el texto como una \"Variante optimizada de Phong\", persiguiendo los mismos resultados con mejor rendimiento."
+    },
+    {
+      "text": "¿Cuál es la principal diferencia conceptual entre los procesos de Iluminación y Sombreado (Shading) en gráficos 3D?",
+      "options": [
+        "a) La iluminación calcula la luz en un punto específico, mientras el sombreado aplica este modelo a toda la superficie interpolando valores.",
+        "b) La iluminación interpola el color a través del polígono, mientras que el sombreado determina la intensidad luminosa de toda la escena.",
+        "c) La iluminación solo se aplica a los vértices de la geometría, mientras que el sombreado se procesa exclusivamente en el centro de las caras.",
+        "d) La iluminación global sustituye al sombreado en tiempo real, mientras que la iluminación local necesita interpolar normales constantemente."
+      ],
+      "correcta": "a",
+      "explicacion": "La iluminación usa ecuaciones físicas para puntos concretos, y el sombreado define cómo cubrir todo el polígono usando esos cálculos."
+    },
+    {
+      "text": "Dentro del Modelo de Iluminación Básico de Phong (1975), ¿qué característica define mejor a la componente Ambiente?",
+      "options": [
+        "a) Simula la iluminación indirecta de forma constante y afecta globalmente a todos los objetos de la escena por igual.",
+        "b) Depende de la posición de la cámara y genera brillos concentrados que simulan la luz reflejada directamente al ojo.",
+        "c) Calcula la atenuación de la luz basándose en el ángulo entre la normal de la superficie y la dirección de los rayos.",
+        "d) Requiere calcular interacciones complejas de rebotes de luz entre múltiples objetos para generar sombras muy realistas."
+      ],
+      "correcta": "a",
+      "explicacion": "La luz ambiente en el modelo básico de Phong es una simplificación constante que afecta a toda la escena globalmente, sin calcular rebotes reales."
+    },
+    {
+      "text": "¿Qué factor geométrico es determinante para calcular la intensidad de la luz en la componente Difusa según la Ley de Lambert?",
+      "options": [
+        "a) El ángulo formado entre el vector normal de la superficie iluminada y la dirección hacia la fuente de luz.",
+        "b) El ángulo formado entre el vector de reflexión especular y la dirección en la que se encuentra la cámara.",
+        "c) La distancia euclídea exacta entre la cámara del observador y el centro geométrico del polígono iluminado.",
+        "d) El ángulo de refracción calculado internamente cuando el rayo atraviesa materiales transparentes o cristalinos."
+      ],
+      "correcta": "a",
+      "explicacion": "La componente difusa (Lambert) depende exclusivamente del ángulo entre la normal de la superficie y la fuente luminosa, independientemente de la cámara."
+    },
+    {
+      "text": "En el modelo de iluminación local clásico, ¿cuál de las siguientes componentes lumínicas varía su resultado si el observador cambia de posición?",
+      "options": [
+        "a) La componente Especular, ya que los brillos concentrados cambian al modificar el ángulo de reflexión hacia la cámara.",
+        "b) La componente Difusa, debido a que la dispersión de la luz depende directamente del punto de vista del usuario.",
+        "c) La componente Ambiente, porque la luz de fondo necesita ajustarse al ángulo de visión principal de la escena.",
+        "d) La atenuación lumínica, porque la distancia a la fuente de luz se recalcula desde la nueva posición del ojo."
+      ],
+      "correcta": "a",
+      "explicacion": "La luz especular es la única del modelo básico de Phong que depende del punto de vista (cámara), ya que calcula el reflejo directo hacia el observador."
+    },
+    {
+      "text": "¿Por qué el método de sombreado Gouraud se considera una mejora técnica significativa frente al Flat Shading tradicional?",
+      "options": [
+        "a) Porque calcula la iluminación en los vértices e interpola el color internamente, eliminando el aspecto facetado de la malla.",
+        "b) Porque interpola los vectores normales píxel a píxel, logrando brillos especulares perfectos en grandes polígonos.",
+        "c) Porque calcula la iluminación una sola vez en el centro de la cara, optimizando el rendimiento general del renderizado.",
+        "d) Porque emplea un mapa de fotones para determinar la luz rebotada antes de aplicar el color a los distintos polígonos."
+      ],
+      "correcta": "a",
+      "explicacion": "Gouraud Shading calcula el color en los vértices y lo interpola, lo que suaviza las superficies y elimina los bordes duros típicos del Flat Shading."
+    },
+    {
+      "text": "A pesar de suavizar las superficies, ¿cuál es un defecto visual conocido que puede ocurrir al utilizar Gouraud Shading?",
+      "options": [
+        "a) Puede omitir o deformar brillos especulares si el punto de máxima reflexión cae en el centro de un polígono grande.",
+        "b) Genera un fuerte efecto de 'Mach Banding' en todas las aristas compartidas, exagerando el contraste de los colores.",
+        "c) Requiere un volumen excesivo de memoria RAM, ya que almacena mapas de interpolación pesados para cada vértice.",
+        "d) Es incapaz de calcular la componente de luz ambiental, dejando las áreas en sombra completamente teñidas de negro."
+      ],
+      "correcta": "a",
+      "explicacion": "Como Gouraud interpola colores desde los vértices, si un brillo especular debe aparecer justo en el medio de un polígono grande, el cálculo no lo captará correctamente."
+    },
+    {
+      "text": "En términos de interpolación geométrica durante el rasterizado, ¿qué procesa internamente el modelo de Phong Shading?",
+      "options": [
+        "a) Interpola las normales desde los vértices hacia todo el interior y recalcula la iluminación completa píxel a píxel.",
+        "b) Interpola exclusivamente los valores de color calculados en los vértices para rellenar progresivamente el polígono.",
+        "c) Interpola posiciones geométricas desde el centro de gravedad de la cara hacia sus bordes para calcular la luz.",
+        "d) Interpola fotones almacenados previamente en un árbol tridimensional para determinar la intensidad del brillo."
+      ],
+      "correcta": "a",
+      "explicacion": "El Phong Shading destaca por interpolar normales a través del polígono y ejecutar el cálculo de iluminación por cada píxel, mejorando mucho el especular."
+    },
+    {
+      "text": "¿Qué propiedad describe correctamente el comportamiento de la luz en un material anisotrópico según la función BRDF?",
+      "options": [
+        "a) La cantidad y dirección de la luz reflejada cambia dependiendo del ángulo o dirección en que la luz incide sobre él.",
+        "b) La reflexión luminosa se produce de manera perfectamente uniforme e idéntica en todas las direcciones posibles.",
+        "c) Toda la luz incidental es completamente absorbida por la superficie, sin producir rebotes especulares o difusos.",
+        "d) El material emite luz propia, comportándose de manera idéntica a una fuente de radiación constante y directa."
+      ],
+      "correcta": "a",
+      "explicacion": "Los materiales anisotrópicos (como el metal cepillado) tienen reflexiones que varían dependiendo de la dirección geométrica de la luz y la superficie."
+    },
+    {
+      "text": "¿Cuál es una limitación estructural del algoritmo clásico de Ray-Tracing cuando procesa escenas tridimensionales?",
+      "options": [
+        "a) No gestiona correctamente la iluminación indirecta difusa (color bleeding) porque asume rebotes lumínicos perfectos.",
+        "b) Es completamente incapaz de calcular reflexiones puras o sombras nítidas originadas por focos de luz puntuales.",
+        "c) No puede generar imágenes desde la perspectiva de la cámara, requiriendo lanzar los rayos desde las propias luces.",
+        "d) Sustituye la geometría de la escena por pequeñas celdas, limitando severamente la resolución máxima del render."
+      ],
+      "correcta": "a",
+      "explicacion": "El Ray-Tracing clásico es excelente para espejos y cristales (rebotes perfectos), pero no maneja bien la dispersión difusa de la luz rebotada (color bleeding)."
+    },
+    {
+      "text": "¿Qué técnica algorítmica utiliza el Path Tracing que provoca la aparición de granulado (ruido visual) en renders inacabados?",
+      "options": [
+        "a) El uso de algoritmos de Monte Carlo para lanzar rayos secundarios aleatorios al chocar buscando diversas fuentes de luz.",
+        "b) La división matemática de la geometría en parches demasiado grandes, lo que genera errores de muestreo por hemicubos.",
+        "c) La acumulación excesiva de densidad de fotones en estructuras kd-tree, colapsando la lectura por parte de la cámara.",
+        "d) La interpolación lineal exclusiva de normales en los vértices sin procesar rebotes especulares en superficies complejas."
+      ],
+      "correcta": "a",
+      "explicacion": "Path Tracing lanza rayos aleatorios (Monte Carlo) al rebotar; si no hay suficientes muestras, esta aletoriedad se percibe como ruido o grano en la imagen."
+    },
+    {
+      "text": "¿Qué fenómeno lumínico específico de la iluminación global está diseñado para simular el algoritmo de Radiosidad?",
+      "options": [
+        "a) Las interacciones luminosas difusas perfectas y la conservación de la energía entre todas las superficies de la escena.",
+        "b) Los reflejos especulares de alta precisión en objetos metálicos curvos y superficies reflectantes como los espejos.",
+        "c) La refracción pura de rayos de luz que atraviesan líquidos o cristales, generando efectos de distorsión óptica.",
+        "d) El comportamiento anisotrópico extremo de los materiales, basándose exclusivamente en datos goniofotométricos."
+      ],
+      "correcta": "a",
+      "explicacion": "La Radiosidad es un método especializado en calcular cómo la luz rebota en superficies mates (interacciones difusas) preservando la energía."
+    },
+    {
+      "text": "Para calcular matemáticamente la dispersión de luz difusa, ¿qué operación realiza el algoritmo de Radiosidad sobre la escena?",
+      "options": [
+        "a) Divide toda la geometría en pequeñas piezas llamadas 'patches' para tratar cada una como emisora y receptora de luz.",
+        "b) Lanza millones de fotones desde la cámara principal hasta impactar contra las mallas para almacenar sus trayectorias.",
+        "c) Interpola los vértices de las sombras generadas por la luz ambiente y suaviza los bordes usando métodos matriciales.",
+        "d) Aplica un mapa dinámico HDRI sobre los polígonos grandes sin requerir subdivisión alguna de la geometría original."
+      ],
+      "correcta": "a",
+      "explicacion": "La Radiosidad subdivide la geometría en pequeños parches (patches) y calcula cómo la energía (luz) se transfiere entre ellos."
+    },
+    {
+      "text": "En el contexto del cálculo por Radiosidad, ¿qué determina exclusivamente el valor del 'Factor de Forma' (Form Factor)?",
+      "options": [
+        "a) La relación puramente geométrica que define el porcentaje de energía que viaja directamente desde un parche a otro.",
+        "b) La capacidad reflectante dependiente del punto de vista que tiene el material asignado a la superficie del parche.",
+        "c) El nivel de energía especular que rebota en un ángulo concreto respecto a la posición de la cámara del observador.",
+        "d) El número total de fotones almacenados en el kd-tree que logran impactar perpendicularmente contra el área evaluada."
+      ],
+      "correcta": "a",
+      "explicacion": "El factor de forma depende exclusivamente de la geometría (distancia, ángulo y visibilidad entre dos parches), no de los materiales ni del punto de vista."
+    },
+    {
+      "text": "¿Qué ventaja directa aporta la independencia de vista que caracteriza a los resultados del cálculo por Radiosidad?",
+      "options": [
+        "a) Permite mover la cámara libremente por la escena sin tener que recalcular las complejas interacciones de luz difusa.",
+        "b) Facilita la modificación en tiempo real de los materiales especulares sin necesidad de preprocesar el mapa de fotones.",
+        "c) Elimina por completo la necesidad de triangular los polígonos complejos antes de procesar las texturas aplicadas.",
+        "d) Posibilita la creación de refracciones perfectas en cristales independientemente del ángulo en que incide la luz focal."
+      ],
+      "correcta": "a",
+      "explicacion": "Al calcular las interacciones difusas entre parches de la escena global, el resultado es independiente del observador, permitiendo explorar la escena sin recalcular."
+    },
+    {
+      "text": "A diferencia del Ray-Tracing clásico, ¿desde dónde se inician los trazados durante la fase de construcción en Photon Mapping?",
+      "options": [
+        "a) Los fotones se disparan desde las propias fuentes de luz luminosas hacia las diversas superficies de la escena 3D.",
+        "b) Los trazados primarios se generan en el sensor virtual de la cámara y viajan en retroceso hacia los focos de luz.",
+        "c) Los rayos de cálculo nacen exclusivamente en el centro de gravedad de cada objeto volumétrico presente en el nivel.",
+        "d) Los haces se proyectan desde el observador rebotando indefinidamente hasta intersectar con un parche emisor difuso."
+      ],
+      "correcta": "a",
+      "explicacion": "El mapa de fotones consta de una primera fase (emisión) donde se lanzan fotones desde las fuentes de luz hacia la escena."
+    },
+    {
+      "text": "¿Qué fenómeno lumínico complejo simulan de manera especialmente eficiente los algoritmos basados en Mapas de Fotones?",
+      "options": [
+        "a) Las cáusticas generadas por la concentración de luz al atravesar objetos transparentes como agua o cristal curvo.",
+        "b) El ruido de interpolación visual conocido como Mach Banding en objetos con baja resolución geométrica o facetada.",
+        "c) La atenuación atmosférica producida por densas nubes de polvo y neblina frente a sistemas de Iluminación Local.",
+        "d) El sombreado suave de vértices propio de Gouraud sin requerir el cálculo matemático directo de normales internas."
+      ],
+      "correcta": "a",
+      "explicacion": "Los mapas de fotones son muy apreciados por su eficiencia y calidad al renderizar cáusticas (luz refractada/reflejada concentrada)."
+    },
+    {
+      "text": "Durante la segunda fase del Photon Mapping (Gathering o renderizado), ¿cómo se determina la iluminación en un punto impactado?",
+      "options": [
+        "a) Se lee la densidad de los fotones almacenados previamente en la estructura espacial (kd-tree) cercana a ese impacto.",
+        "b) Se dispara un rayo especular de Monte Carlo directamente hacia la fuente emisora para verificar el bloqueo visual.",
+        "c) Se calcula el factor de forma entre los distintos parches colindantes para asegurar la correcta preservación de energía.",
+        "d) Se interpola el color absoluto entre los cuatro vértices principales del polígono ignorando los rebotes lumínicos extra."
+      ],
+      "correcta": "a",
+      "explicacion": "En la fase de render, al chocar un rayo de visión con la geometría, se busca en el kd-tree espacial cuántos fotones hay cerca para calcular el brillo/color."
+    },
+    {
+      "text": "¿Cómo aportan las imágenes HDRI (High Dynamic Range Imaging) realismo a los cálculos modernos de iluminación global?",
+      "options": [
+        "a) Envuelven la escena proyectando iluminación y reflejos precisos extraídos de valores lumínicos del mundo fotográfico.",
+        "b) Sustituyen los algoritmos de Path Tracing mediante mapas de desplazamiento geométrico muy densos y detallados.",
+        "c) Convierten las mallas poligonales en millones de parches de radiosidad para acelerar el rebote difuso de los rayos.",
+        "d) Triangulan automáticamente superficies problemáticas evitando errores visuales al aplicar el sombreado de Gouraud."
+      ],
+      "correcta": "a",
+      "explicacion": "Los mapas HDRI capturan luz real en múltiples exposiciones y se usan como un 'entorno' esférico que ilumina y refleja físicamente sobre los objetos 3D."
+    },
+    {
+      "text": "¿Qué es el 'Mach Banding', un problema que surge al utilizar métodos de sombreado simples como el Flat Shading?",
+      "options": [
+        "a) Una ilusión óptica en la que el cerebro humano exagera artificialmente el contraste entre bandas colindantes de distinto tono.",
+        "b) Un fallo de cálculo matemático donde las luces ambientales se suman exponencialmente saturando el blanco de la imagen.",
+        "c) Un defecto de textura que aparece exclusivamente cuando los vectores normales de un polígono se invierten por completo.",
+        "d) Una anomalía geométrica que impide a los rayos especulares rebotar, eliminando todo el brillo de superficies reflectantes."
+      ],
+      "correcta": "a",
+      "explicacion": "El Mach Banding es un fenómeno perceptivo donde el contraste entre facetas adyacentes de diferente tono se percibe más acentuado en los bordes."
+    },
+    {
+      "text": "¿Cuál es la utilidad principal del instrumento de medición conocido como Goniofotómetro en el ámbito del renderizado 3D?",
+      "options": [
+        "a) Medir físicamente cómo los materiales del mundo real reflejan la luz para poder crear modelos matemáticos BRDF precisos.",
+        "b) Registrar millones de rayos secundarios de Monte Carlo en entornos cerrados para evitar el ruido típico del Path Tracing.",
+        "c) Analizar la distancia óptima entre los vértices poligonales para garantizar una interpolación correcta de Gouraud.",
+        "d) Proyectar haces de luz de alta intensidad sobre mallas simples para generar mapas de radiosidad en tiempo real absoluto."
+      ],
+      "correcta": "a",
+      "explicacion": "El goniofotómetro mide cómo la luz incide y rebota en superficies reales, generando datos para crear funciones BRDF que simulan el material."
     }
   ],
   "MAC_Tema_5_Tests.txt": [
@@ -1732,6 +2392,226 @@ const testData = {
       ],
       "correcta": "c",
       "explicacion": "Las singularidades son errores algebraicos (muy ligados al sistema de coordenadas posicionales y resoluciones del Solver IK) que desencadenan fallos técnicos o tics robóticos repentinos al cruzar una rodilla un punto donde múltiples ejes no logran definir la rotación esperada de retorno natural si no están restringidos."
+    },
+    {
+      "text": "Sobre los tipos de animación, ¿qué técnica utiliza el fotografiado fotograma a fotograma de modelos físicos reales?",
+      "options": [
+        "a) La técnica de captura de movimientos o MOCAP.",
+        "b) La animación tradicional dibujada a mano.",
+        "c) La técnica conocida como animación stop-motion.",
+        "d) La técnica basada en dispositivos animatronics."
+      ],
+      "correcta": "c",
+      "explicacion": "El stop-motion consiste en fotografiar frame a frame modelos reales (marionetas, arcilla) para crear la ilusión de movimiento continuo."
+    },
+    {
+      "text": "En el desarrollo de un personaje, ¿qué elemento corporal resulta fundamental para revelar el peso y el estado de ánimo general?",
+      "options": [
+        "a) La proporción exacta de la cabeza y el tronco.",
+        "b) La simetría perfecta en todas sus extremidades.",
+        "c) El estilo de peinado y la gama cromática elegida.",
+        "d) El ciclo de marcha y el balanceo de su cuerpo."
+      ],
+      "correcta": "d",
+      "explicacion": "El ciclo de marcha (Walk cycle), incluyendo el balanceo del torso y las extremidades, es la herramienta principal para revelar el peso físico y la emoción del personaje."
+    },
+    {
+      "text": "Dentro de la clasificación de storyboards, ¿cuál es el que se elabora específicamente sin usar jerga técnica para la revisión de los clientes?",
+      "options": [
+        "a) El storyboard de presentación, que suele ser a color.",
+        "b) El storyboard conceptual, con notas informales.",
+        "c) El storyboard de producción, con planos de luces.",
+        "d) El storyboard de postproducción, con anotaciones."
+      ],
+      "correcta": "a",
+      "explicacion": "El storyboard de presentación es más detallado y estético (a color) para ser revisado por clientes, evitando intencionadamente tecnicismos incomprensibles para ellos."
+    },
+    {
+      "text": "¿Qué ángulo de cámara se utiliza comúnmente en cine para magnificar a un personaje y dotarlo de una apariencia fuerte o imponente?",
+      "options": [
+        "a) El ángulo de cámara picado, tomando la imagen desde arriba.",
+        "b) El ángulo de cámara normal, a la misma altura de los ojos.",
+        "c) El ángulo de cámara cenital, tomado perpendicular al suelo.",
+        "d) El ángulo de cámara contrapicado, grabando desde abajo."
+      ],
+      "correcta": "d",
+      "explicacion": "El plano en ángulo contrapicado se graba desde abajo hacia arriba, lo que engrandece y otorga poder o fuerza al sujeto en pantalla."
+    },
+    {
+      "text": "¿Cuál de las siguientes afirmaciones describe de manera correcta el movimiento de cámara conocido técnicamente como 'Paneo'?",
+      "options": [
+        "a) Es el giro horizontal o vertical de la cámara sobre su propio eje.",
+        "b) Es el desplazamiento físico y real de la cámara por el escenario.",
+        "c) Es el movimiento óptico interno que sirve para enfocar un sujeto.",
+        "d) Es la inclinación de la cámara para crear sensación de velocidad."
+      ],
+      "correcta": "a",
+      "explicacion": "El paneo consiste en rotar o girar la cámara sobre su propio eje (típicamente montada en un trípode) para describir o seguir la escena en horizontal o vertical."
+    },
+    {
+      "text": "Históricamente, ¿qué hito cinematográfico supuso el efecto visual empleado por el T-1000 en la película 'Terminator 2'?",
+      "options": [
+        "a) La creación del primer entorno completamente generado por ordenador.",
+        "b) La técnica de transición fluida de formas conocida como 'Morphing'.",
+        "c) El primer uso del 'Bullet Time' para congelar la acción de la escena.",
+        "d) El desarrollo del primer personaje animado mediante 'Stop-motion'."
+      ],
+      "correcta": "b",
+      "explicacion": "Terminator 2 (1991) consagró el uso del Morphing para crear las metamorfosis en tiempo real del robot T-1000 de metal líquido."
+    },
+    {
+      "text": "Según los 12 principios de animación, ¿cuál es el objetivo primordial de aplicar el principio de 'Estirar y encoger' (Squash and Stretch)?",
+      "options": [
+        "a) Acelerar y decelerar los movimientos en el inicio y final de una acción.",
+        "b) Preparar al espectador psicológicamente antes de la acción principal.",
+        "c) Dar la sensación de peso, impacto y gran flexibilidad a un objeto.",
+        "d) Mantener el carisma del personaje y su nivel de atractivo visual."
+      ],
+      "correcta": "c",
+      "explicacion": "El squash and stretch deforma un cuerpo al chocar o moverse para transmitir su densidad, peso y nivel de flexibilidad, simulando la conservación de volumen."
+    },
+    {
+      "text": "¿Qué principio de la animación se encarga de evitar que partes como el pelo o la ropa se detengan de forma brusca al frenar el cuerpo?",
+      "options": [
+        "a) El principio de las puestas en escena conocido como Staging.",
+        "b) El principio visual de seguir los arcos de trayectoria curvos.",
+        "c) El principio basado en animar elementos de acción secundaria.",
+        "d) El principio técnico de acción superpuesta y acción continuada."
+      ],
+      "correcta": "d",
+      "explicacion": "La acción continuada y superpuesta dicta que elementos sueltos o apéndices (ropa, pelo) siguen moviéndose por inercia aunque el cuerpo principal se haya detenido."
+    },
+    {
+      "text": "Dentro de los 'nuevos' principios aplicados a la animación 3D, ¿a qué se refiere el concepto denominado 'Blend Motion'?",
+      "options": [
+        "a) Al proceso de iluminar escenas fotorealistas mediante el uso de luz global.",
+        "b) A la técnica de calcar sobre metraje de vídeo real para dibujar un modelo.",
+        "c) A la mezcla de captura de movimiento, simulaciones dinámicas y keyframes.",
+        "d) Al control exhaustivo de expresiones usando manipuladores faciales morfológicos."
+      ],
+      "correcta": "c",
+      "explicacion": "El Blend Motion (o combinación de movimientos) es la capacidad técnica de mezclar de forma armónica clips de MOCAP, simulaciones físicas y keyframes clásicos en un mismo personaje."
+    },
+    {
+      "text": "Durante el flujo de trabajo de un estudio CGI, ¿en qué fase específica se realiza habitualmente el cálculo del Rigging de un personaje?",
+      "options": [
+        "a) En la fase de preproducción, al mismo tiempo que los storyboards.",
+        "b) En la fase de postproducción, una vez completado el texturizado.",
+        "c) En la fase de producción, desarrollándose tras el modelado 3D.",
+        "d) En la fase de proceso final, mediante composición en capas 2D."
+      ],
+      "correcta": "c",
+      "explicacion": "El Rigging se realiza en la etapa de producción; es necesario contar previamente con el modelado 3D (geometría) antes de insertar el esqueleto interno para animar."
+    },
+    {
+      "text": "En el contexto de los conceptos fundamentales, ¿cuál es la diferencia principal entre cinemática y dinámica en animación 3D?",
+      "options": [
+        "a) La dinámica estudia las fuerzas físicas implicadas y la cinemática ignora dichas fuerzas.",
+        "b) La cinemática estudia las texturas aplicadas y la dinámica evalúa la malla tridimensional.",
+        "c) La cinemática se encarga del renderizado final y la dinámica se encarga del modelado base.",
+        "d) La dinámica analiza únicamente rotaciones locales y la cinemática analiza las traslaciones."
+      ],
+      "correcta": "a",
+      "explicacion": "La cinemática describe el movimiento de cuerpos y cadenas jerárquicas ignorando la masa o gravedad, mientras que la dinámica genera el movimiento basado puramente en fuerzas físicas."
+    },
+    {
+      "text": "Al utilizar cuaterniones (quaternions) para calcular rotaciones en 3D, ¿qué grave problema técnico se evita respecto a los ángulos de Euler?",
+      "options": [
+        "a) El temblor y la sacudida excesiva al emplear interpolaciones spline.",
+        "b) El efecto conocido como Gimbal Lock o bloqueo y pérdida de un eje.",
+        "c) La deformación incorrecta de la topología en uniones articulares.",
+        "d) La sobrecarga exponencial de cálculo dentro de los motores físicos."
+      ],
+      "correcta": "b",
+      "explicacion": "Los cuaterniones basan sus cálculos en un sistema de cuatro dimensiones matemáticas que evita por completo el Gimbal Lock o bloqueo direccional de ejes de Euler."
+    },
+    {
+      "text": "¿Cómo funciona exactamente el sistema de animación basado en Cinemática Inversa (IK) al momento de mover a un personaje?",
+      "options": [
+        "a) El animador mueve la pieza inicial (ej. hombro) y las hijas rotan de forma dependiente y natural.",
+        "b) El animador añade fotogramas clave solamente sobre el centro de gravedad del objeto modelado.",
+        "c) El animador posiciona la pieza final (ej. mano) y el sistema deduce el resto de rotaciones.",
+        "d) El animador asigna un objetivo lejano para que el personaje gire todo su cuerpo apuntando a él."
+      ],
+      "correcta": "c",
+      "explicacion": "A diferencia de FK (que va de padre a hijo), IK permite fijar la posición final (End Effector) para que el ordenador calcule los ángulos hacia atrás en la jerarquía."
+    },
+    {
+      "text": "En los motores de físicas, si aplicamos propiedades a un objeto para que actúe de forma completamente gobernada por la gravedad, sin animarse con keyframes, ¿qué tipo de cuerpo es?",
+      "options": [
+        "a) Se trata de un cuerpo rígido definido con un comportamiento cinemático.",
+        "b) Se trata de un cuerpo blando diseñado con una alta deformación elástica.",
+        "c) Se trata de un elemento de trayectoria sujeto a un controlador jerárquico.",
+        "d) Se trata de un cuerpo rígido definido con un comportamiento de tipo dinámico."
+      ],
+      "correcta": "d",
+      "explicacion": "Un cuerpo dinámico es aquel cuyo movimiento es calculado al 100% por un motor de dinámicas a través de colisiones, fuerzas y gravedad."
+    },
+    {
+      "text": "Al configurar una cámara virtual en 3D, ¿qué característica controla el uso de las diferentes lentes, como el gran angular o el teleobjetivo?",
+      "options": [
+        "a) El grado de profundidad de campo desenfocado al final del render.",
+        "b) La distancia focal del objetivo, medida comúnmente en milímetros.",
+        "c) El nivel general de exposición temporal aplicado a la luz global.",
+        "d) La velocidad lineal con la que transcurre un plano de tipo secuencia."
+      ],
+      "correcta": "b",
+      "explicacion": "La distancia focal es la que define el lente. Un valor bajo (18mm) da un gran angular y un valor alto (100mm) hace de teleobjetivo, cambiando la visión del espacio."
+    },
+    {
+      "text": "Dentro de las restricciones avanzadas (constraints), ¿cuál permite hacer que un personaje tome un vaso de una mesa y después lo vuelva a soltar?",
+      "options": [
+        "a) El constraint conocido bajo el nombre de Look At.",
+        "b) El constraint fundamentado en la Trayectoria Path.",
+        "c) El constraint basado en la Jerarquía Link y Unlink.",
+        "d) El constraint principal de Orientación y Rotación."
+      ],
+      "correcta": "c",
+      "explicacion": "La restricción de Jerarquía (Link/Unlink o Parent/Unparent) permite conectar y desconectar un objeto de otro de forma dinámica durante la animación a lo largo del tiempo."
+    },
+    {
+      "text": "Al utilizar la Cinemática Inversa, ¿qué problema ocurre cuando el punto destino al que debe llegar el efector está más lejos de lo que el brazo puede extenderse?",
+      "options": [
+        "a) Se produce una redundancia que genera infinitas posibles posturas.",
+        "b) Se desencadena un fallo en el sistema al llegar al tope articular.",
+        "c) Se genera una situación descrita como de solución final imposible.",
+        "d) Se aplican restricciones matemáticas automáticas de sobrecarga pura."
+      ],
+      "correcta": "c",
+      "explicacion": "La 'solución imposible' aparece en los cálculos de IK cuando la longitud sumada de los huesos no basta para alcanzar las coordenadas meta solicitadas por el animador."
+    },
+    {
+      "text": "En 3ds Max, ¿qué solver de cinemática inversa resulta ideal para animar estructuras flexibles como tentáculos o cuerdas usando una curva guía?",
+      "options": [
+        "a) El sistema denominado HI Solver para trabajar con cadenas óseas largas.",
+        "b) El sistema denominado Spline IK para seguir la curvatura de una spline.",
+        "c) El sistema denominado HD Solver usado por su dependencia del historial.",
+        "d) El sistema denominado Limb IK para trabajar con brazos o piernas cortas."
+      ],
+      "correcta": "b",
+      "explicacion": "El Spline IK Solver es la solución matemáticamente perfecta para conectar una jerarquía de huesos con los nodos de una curva Spline que la curva de tentáculos o colas."
+    },
+    {
+      "text": "En el área de herramientas avanzadas de animación CGI, ¿en qué consiste la llamada 'animación procedural'?",
+      "options": [
+        "a) En fotografiar modelos fotograma a backwards para obtener su física real.",
+        "b) En usar inteligencia artificial o código para calcular un movimiento natural.",
+        "c) En aplicar manualmente posturas extremas a lo largo de una línea temporal.",
+        "d) En grabar a múltiples actores en vivo para trasladar su masa al simulador."
+      ],
+      "correcta": "b",
+      "explicacion": "La animación procedural evita el uso de keyframes manuales y se basa en variables, algoritmos o scripts programados que generan un ciclo de movimiento de forma automática."
+    },
+    {
+      "text": "En la animación moderna de multitudes, como la que permite la herramienta Populate en 3ds Max, ¿cómo se logra el movimiento armónico de grupos enormes de personajes?",
+      "options": [
+        "a) Animando de forma individual cada paso mediante poses clave para evitar las colisiones en el grupo.",
+        "b) Mezclando simulaciones de inteligencia artificial general con rutinas de movimiento independientes.",
+        "c) Duplicando mecánicamente una misma animación cíclica y rotándola con un ligero retraso de tiempo.",
+        "d) Convirtiendo las entidades en cuerpos elásticos simulados por gravedad y sin inteligencia interna."
+      ],
+      "correcta": "b",
+      "explicacion": "La animación de masas usa IA para gobernar el comportamiento colectivo sin colisiones ('rebaño') y al mismo tiempo ejecuta librerías de movimientos individuales en cada agente."
     }
   ],
   "MAC_Tema_6_Tests.txt": [
@@ -2141,6 +3021,226 @@ const testData = {
       ],
       "correcta": "c",
       "explicacion": "El proceso exacto de \"Instalación de usuario final\" detallado en el documento es: \"Guardar el script .py -> Edit > Preferences > Add-ons > Install -> Activar checkbox\"."
+    },
+    {
+      "text": "¿Cuál es la principal utilidad de la librería base `bpy` dentro de Blender?",
+      "options": [
+        "a) Ejecutar programas externos compilados en C++ para renderizado avanzado en tiempo real.",
+        "b) Acceder a todas las funciones y comandos del programa mediante secuencias de código Python.",
+        "c) Optimizar la topología de las mallas automáticamente sin necesidad de usar modificadores.",
+        "d) Renderizar secuencias de video utilizando el motor Eevee para juegos de realidad virtual."
+      ],
+      "correcta": "b",
+      "explicacion": "La librería `bpy` es la API de Python en Blender y permite acceder a todas sus funciones para automatizar tareas, crear Addons y modificar parámetros."
+    },
+    {
+      "text": "En el Workspace \"Scripting\", ¿para qué sirve la ventana denominada \"Info\" (Información)?",
+      "options": [
+        "a) Para visualizar la estructura de nodos de los materiales asignados al objeto seleccionado.",
+        "b) Para mostrar un registro histórico de las operaciones manuales ejecutadas en el entorno.",
+        "c) Para redactar y ejecutar directamente scripts completos formados por un número de líneas.",
+        "d) Para revisar el rendimiento de la tarjeta gráfica y la memoria RAM del sistema operativo."
+      ],
+      "correcta": "b",
+      "explicacion": "La ventana Info muestra el registro histórico de operaciones ejecutadas, útil para copiar el código de acciones realizadas manualmente."
+    },
+    {
+      "text": "Si deseas copiar la función de Python de un botón específico en la interfaz, ¿qué atajo debes usar?",
+      "options": [
+        "a) Posicionar el cursor sobre el botón y presionar la combinación de teclas Ctrl más la tecla C.",
+        "b) Posicionar el cursor sobre el botón y presionar la combinación Shift más Ctrl más la tecla C.",
+        "c) Posicionar el cursor sobre el botón y presionar la combinación de teclas Alt más la tecla F4.",
+        "d) Posicionar el cursor sobre el botón y hacer un doble clic rápido con el botón izquierdo del ratón."
+      ],
+      "correcta": "a",
+      "explicacion": "El atajo Ctrl + C sobre un botón o menú copia al portapapeles la función de Python correspondiente a ese elemento."
+    },
+    {
+      "text": "¿Qué ventaja principal ofrece el sistema de \"Geometry Nodes\" respecto al código manual puro?",
+      "options": [
+        "a) Requiere menos recursos de memoria RAM al calcular dinámicas de fluidos y sistemas de colisión.",
+        "b) Permite compilar los resultados en archivos ejecutables que son independientes de la plataforma.",
+        "c) Es un sistema procedural y no destructivo basado en nodos que facilita su rápida automatización.",
+        "d) Genera automáticamente materiales PBR realistas sin la necesidad de crear texturas muy complejas."
+      ],
+      "correcta": "c",
+      "explicacion": "Geometry Nodes permite modelado procedural y animación basada en nodos, automatizando procesos sin modificar la malla original."
+    },
+    {
+      "text": "¿Cuál es la función del submódulo `bpy.data` dentro de la librería API principal de Blender?",
+      "options": [
+        "a) Proporcionar acceso a elementos temporales que dependen del estado actual o de la ventana activa.",
+        "b) Proveer acceso directo a todos los datos guardados en el archivo actual sin importar la selección.",
+        "c) Contener las plantillas o definiciones de las clases para toda la programación orientada a objetos.",
+        "d) Ejecutar directamente acciones concretas tal y como las realizaría un usuario común en la interfaz."
+      ],
+      "correcta": "b",
+      "explicacion": "`bpy.data` permite el acceso a todos los datos guardados en el archivo (como materiales, escenas, objetos) independientemente de la ventana."
+    },
+    {
+      "text": "¿Qué función debe estar presente en el código de un operador personalizado (`bpy.types.Operator`) para que ejecute su acción?",
+      "options": [
+        "a) La función interna `def execute(self, context):` que debe devolver siempre el estado `{'FINISHED'}`.",
+        "b) La función interna `def register(self, context):` que debe devolver siempre el estado `{'REGISTER'}`.",
+        "c) La función interna `def invoke(self, context):` que debe devolver siempre un estado `{'COMPLETED'}`.",
+        "d) La función interna `def process(self, context):` que debe devolver siempre un estado `{'EXECUTED'}`."
+      ],
+      "correcta": "a",
+      "explicacion": "Un operador hereda de `bpy.types.Operator` y debe definir `def execute(self, context):` retornando `{'FINISHED'}` al concluir."
+    },
+    {
+      "text": "¿Qué diccionario es obligatorio definir al inicio del código de un Addon para incluir sus metadatos?",
+      "options": [
+        "a) El diccionario `bl_addon` que contiene el nombre del script y la categoría correspondiente del Addon.",
+        "b) El diccionario `bl_plugin` que especifica la versión del programa y la descripción general del script.",
+        "c) El diccionario `bl_info` que detalla el nombre, la categoría y la versión de Blender que es requerida.",
+        "d) El diccionario `bl_meta` que almacena los créditos del autor original y los enlaces de la documentación."
+      ],
+      "correcta": "c",
+      "explicacion": "El diccionario `bl_info` es obligatorio e incluye metadatos como nombre, categoría y versión."
+    },
+    {
+      "text": "¿Qué acciones se deben llevar a cabo para instalar un Addon como usuario final directamente en Blender?",
+      "options": [
+        "a) Guardar el script en la carpeta de instalación del sistema y reiniciar el programa presionando tecla F12.",
+        "b) Abrir el archivo `.py` dentro del entorno del Text Editor, ejecutar el script completo y guardar la escena.",
+        "c) Compilar el archivo de texto en un formato de programa ejecutable y abrirlo antes de iniciar el entorno 3D.",
+        "d) Ir al menú de Edit, Preferences, Add-ons, opción de Install, seleccionar el script y activar la casilla útil."
+      ],
+      "correcta": "d",
+      "explicacion": "La instalación habitual de usuario requiere ir a Edit > Preferences > Add-ons > Install y activar la casilla correspondiente."
+    },
+    {
+      "text": "¿Para qué se utilizan los diferentes tipos de propiedades en `bpy.props` (como la opción `StringProperty`) al crear interfaces?",
+      "options": [
+        "a) Para definir los diversos comandos de atajos de teclado que ejecutan instantáneamente las distintas herramientas.",
+        "b) Para crear ciertas variables preparadas para capturar datos numéricos o textos introducidos por el usuario activo.",
+        "c) Para renderizar de manera completamente automática los diferentes pases de luz y sombras en una escena terminada.",
+        "d) Para aplicar unos materiales muy complejos a las superficies pulidas de los objetos geométricos tridimensionales."
+      ],
+      "correcta": "b",
+      "explicacion": "Las propiedades de `bpy.props` preparan variables especiales para recolectar información del usuario desde la interfaz."
+    },
+    {
+      "text": "Si deseas insertar un fotograma clave (keyframe) utilizando código Python, ¿qué parámetro debes especificar obligatoriamente?",
+      "options": [
+        "a) El tipo de curva de interpolación (Bezier o Lineal) y la cantidad de suavizado aplicado a lo largo de la misma.",
+        "b) La propiedad que se desea animar mediante el argumento denominado `data_path` y el número de fotograma deseado.",
+        "c) El nombre de la cámara activa que renderizará la animación actual y la resolución final del video de exportación.",
+        "d) La cantidad total de fotogramas del proyecto en curso y la ruta de almacenamiento de la secuencia de fotogramas."
+      ],
+      "correcta": "b",
+      "explicacion": "Se utiliza el método `keyframe_insert`, que requiere definir el parámetro `data_path` (ej. 'location') y el fotograma."
+    },
+    {
+      "text": "¿Qué característica describe mejor a un menú conocido como \"Pie Menu\" dentro de las interfaces de usuario nativas de Blender?",
+      "options": [
+        "a) Es una pestaña gráfica colapsable situada en el panel lateral que agrupa visualmente varios elementos modificadores.",
+        "b) Es una ventana rectangular emergente que flota sobre la interfaz del usuario y que permite seleccionar los directorios.",
+        "c) Es un menú circular de acceso rápido que se despliega de forma temporal al mantener pulsada una tecla en el teclado.",
+        "d) Es un avanzado editor de nodos lógico diseñado de forma específica para facilitar la creación de texturas procedurales."
+      ],
+      "correcta": "c",
+      "explicacion": "Un Pie Menu es un menú circular rápido que aparece al pulsar un atajo de teclado en la ventana."
+    },
+    {
+      "text": "En el diseño de una interfaz (UI) heredada de `bpy.types.Panel`, ¿qué método se emplea para disponer visualmente los elementos?",
+      "options": [
+        "a) El método especial `def layout(self, context):` para colocar botones usando las coordenadas exactas de la pantalla actual.",
+        "b) El método especial `def draw(self, context):` para ir estructurando botones mediante los comandos de fila y columna gráfica.",
+        "c) El método especial `def design(self, context):` para agrupar todas las propiedades creando listas y diccionarios complejos.",
+        "d) El método especial `def render(self, context):` para generar una vista previa de la ventana antes de compilar el script final."
+      ],
+      "correcta": "b",
+      "explicacion": "El método `draw` se utiliza en las interfaces de usuario (como paneles o menús) para organizar los botones utilizando elementos de diseño."
+    },
+    {
+      "text": "¿Cuál de los siguientes submódulos del API ejecutaría directamente la acción de añadir un cubo primitivo en medio de la escena 3D?",
+      "options": [
+        "a) `bpy.data`, porque permite modificar la información estructural del archivo de forma permanente para el modelo final.",
+        "b) `bpy.context`, porque depende de la selección actual de la cámara virtual en el respectivo entorno de visualización.",
+        "c) `bpy.types`, porque define la clase abstracta fundamental de una figura primitiva básica para las futuras instancias.",
+        "d) `bpy.ops`, porque agrupa los operadores principales que ejecutan las acciones tal y como lo haría el usuario manual."
+      ],
+      "correcta": "d",
+      "explicacion": "El módulo `bpy.ops` contiene todos los operadores (como añadir objetos) que emulan acciones del usuario."
+    },
+    {
+      "text": "Al desactivar de forma temporal un Addon desde las preferencias de Blender, ¿qué función interna del script se ejecuta automáticamente?",
+      "options": [
+        "a) La función interna llamada `def disconnect()`, encargada de desvincular múltiples referencias dentro de la memoria caché.",
+        "b) La función interna llamada `def unregister()`, encargada de eliminar apropiadamente las clases registradas en la memoria.",
+        "c) La función interna llamada `def deactivate()`, encargada de detener de manera forzada los procesos en ejecución actuales.",
+        "d) La función interna llamada `def disable()`, encargada de borrar todos los atajos de teclado ubicados en el panel principal."
+      ],
+      "correcta": "b",
+      "explicacion": "La función `unregister` revierte los cambios hechos por `register` eliminando las clases de la memoria cuando se desactiva el addon."
+    },
+    {
+      "text": "¿Qué método se utiliza generalmente para añadir de manera directa las nuevas funciones de un Addon en los menús nativos de la interfaz?",
+      "options": [
+        "a) Se emplea la función `insert()` dentro del menú específico de todas las opciones del panel principal en el editor visual.",
+        "b) Se emplea la función `append()` en el módulo de UI correspondiente para poder enlazar adecuadamente el nuevo operador.",
+        "c) Se emplea la función `attach()` para lograr pegar el código funcional en el menú desplegable de las nuevas herramientas.",
+        "d) Se emplea la función `embed()` dentro de la definición básica del panel lateral para integrar con facilidad las propiedades."
+      ],
+      "correcta": "b",
+      "explicacion": "Se utiliza el método `append()` sobre una estructura de menú de `bpy.types` (por ejemplo, `bpy.types.VIEW3D_MT_object.append(menu_func)`)."
+    },
+    {
+      "text": "¿Qué función cumple el respectivo Workspace \"Scripting\" en relación directa con la ventana llamada Consola interactiva de Python?",
+      "options": [
+        "a) Permite escribir de forma libre aplicaciones interactivas complejas para presentar modelos tridimensionales en vivo y directo.",
+        "b) Permite ejecutar ágilmente líneas individuales de código específico para probar distintos comandos y evaluar su resultado real.",
+        "c) Permite exportar velozmente todos los scripts de animación manual para ser utilizados en potentes motores gráficos externos.",
+        "d) Permite traducir automáticamente el denso código fuente a diversos otros lenguajes buscando obtener un mayor rendimiento final."
+      ],
+      "correcta": "b",
+      "explicacion": "La Consola de Python se utiliza para ejecutar líneas individuales de forma interactiva y realizar pruebas rápidas de comandos."
+    },
+    {
+      "text": "¿Cómo se puede acceder a la útil propiedad de \"objeto activo\" mediante el uso del submódulo más adecuado de la interfaz de programación?",
+      "options": [
+        "a) Utilizando el comando `bpy.data.active_object`, ya que almacena fielmente el elemento activo dentro del disco duro interno.",
+        "b) Utilizando el comando `bpy.ops.active_object`, ya que ejecuta con rapidez la selección principal del modelo en el espacio 3D.",
+        "c) Utilizando el comando `bpy.types.active_object`, ya que define estrictamente el tipo de clase seleccionada actualmente por ti.",
+        "d) Utilizando el comando `bpy.context.active_object`, ya que representa correctamente la información que es dependiente del estado."
+      ],
+      "correcta": "d",
+      "explicacion": "El objeto activo depende del estado actual de la selección, por lo que se accede mediante `bpy.context.active_object`."
+    },
+    {
+      "text": "¿Qué representa exactamente el parámetro numérico `index` al insertar un keyframe por código para la propiedad temporal `location` (ej. `index=1`)?",
+      "options": [
+        "a) El número total predefinido de keyframes exactos que se añadirán simultáneamente en esa misma posición temporal del timeline general.",
+        "b) El eje geométrico específico sobre el cual se aplicará de inmediato la transformación actual (donde el número 1 corresponde al eje Y).",
+        "c) El orden de prioridad global o relativo en el que se renderizarán a posteriori todas las complejas animaciones de toda la escena activa.",
+        "d) La capa de animación secundaria adicional donde se guardará permanentemente el nuevo fotograma clave deseado para la composición global."
+      ],
+      "correcta": "b",
+      "explicacion": "Para un vector como `location` (X, Y, Z), el `index` corresponde al eje afectado, siendo 0 para X, 1 para Y y 2 para Z."
+    },
+    {
+      "text": "Cuando un desarrollador o usuario necesita copiar velozmente la \"ruta de datos\" (data path) de una propiedad, ¿qué es lo que debe hacer?",
+      "options": [
+        "a) Pulsar las teclas Ctrl más C mientras mantiene presionado firmemente el botón derecho de su ratón sobre la respectiva ventana gráfica.",
+        "b) Pulsar las teclas Shift más Ctrl más C directamente sobre la propiedad deseada estando en cualquier panel de la interfaz de usuario.",
+        "c) Pulsar las teclas Ctrl más Alt más Supr y posteriormente seleccionar la ruta específica de la propiedad desde el editor de sistema base.",
+        "d) Pulsar las teclas Shift más A con el fin de abrir el útil menú emergente y proceder a elegir la opción concreta de copiar la configuración."
+      ],
+      "correcta": "b",
+      "explicacion": "El atajo para copiar el *data path* de una propiedad en Blender es Shift + Ctrl + C sobre dicha propiedad."
+    },
+    {
+      "text": "¿Qué característica esencial del submódulo denominado `bpy.types` lo hace totalmente indispensable para la creación de nuevas herramientas personalizadas?",
+      "options": [
+        "a) Almacena ordenadamente el registro histórico de comandos ejecutados con éxito, permitiendo deshacer cambios repentinos en los objetos.",
+        "b) Funciona eficientemente como un robusto motor de renderizado interno enfocado en previsualizar alteraciones de geometría en tiempo real.",
+        "c) Contiene internamente la estricta definición abstracta de clases, sirviendo como plantilla base esencial para diseñar operadores nuevos.",
+        "d) Maneja de manera absolutamente exclusiva la importante importación y exportación de archivos en los distintos formatos gráficos puros."
+      ],
+      "correcta": "c",
+      "explicacion": "`bpy.types` almacena las definiciones de clases usadas como plantillas (ej. `bpy.types.Operator`, `bpy.types.Panel`) para extender la interfaz."
     }
   ],
   "MAC_Test_General_50.txt": [
