@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <title>Practicador MAC</title>
+    <meta name="description" content="Aplicación interactiva para practicar tests de la asignatura MAC">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Pantalla de Inicio -->
+        <section id="screen-home" class="screen active">
+            <header>
+                <h1>Practicador <span>MAC</span></h1>
+                <p>Simulador interactivo de tests</p>
+            </header>
+            
+            <div class="menu-container">
+                <button id="btn-exam" class="btn-primary glow-effect">
+                    <div class="btn-content">
+                        <span class="btn-title">MODO EXAMEN (20 Preguntas)</span>
+                        <span class="btn-desc">Generación aleatoria con penalización</span>
+                    </div>
+                </button>
+                
+                <div class="divider">O elige un test específico</div>
+                
+                <div id="test-list" class="test-list">
+                    <!-- Dinámico -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla de Test -->
+        <section id="screen-test" class="screen">
+            <header class="test-header">
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+                <div class="stats-bar">
+                    <span id="q-counter">Pregunta 1 de 20</span>
+                    <div id="exam-stats" class="exam-stats hidden">
+                        <span class="badge success" id="badge-aciertos">0 ✔</span>
+                        <span class="badge danger" id="badge-fallos">0 ✘</span>
+                        <span class="badge neutral" id="badge-blancos">0 ➖</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="question-container glass-panel">
+                <h2 id="question-text">¿Cargando pregunta...?</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Dinámico -->
+                </div>
+                <div id="feedback-container" class="feedback-container hidden">
+                    <p id="feedback-message" class="feedback-message"></p>
+                    <p id="feedback-explanation" class="feedback-explanation"></p>
+                </div>
+            </div>
+            
+            <div class="controls-container">
+                <button id="btn-pass" class="btn-secondary">Dejar en Blanco (Pasar)</button>
+                <button id="btn-next" class="btn-primary hidden">Siguiente Pregunta</button>
+                <button id="btn-quit" class="btn-danger">Terminar Test</button>
+            </div>
+        </section>
+
+        <!-- Pantalla de Resultados -->
+        <section id="screen-results" class="screen">
+            <header>
+                <h2>Test Finalizado</h2>
+            </header>
+            
+            <div class="results-card glass-panel">
+                <div class="score-circle">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle-bg"
+                            d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle" id="score-circle-path"
+                            stroke-dasharray="0, 100"
+                            d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage" id="score-text">0/10</text>
+                    </svg>
+                </div>
+                
+                <h3 id="result-title">¡Buen trabajo!</h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-value" id="res-total">20</span>
+                        <span class="stat-label">Total Vistas</span>
+                    </div>
+                    <div class="stat-box success">
+                        <span class="stat-value" id="res-aciertos">15</span>
+                        <span class="stat-label">Aciertos</span>
+                    </div>
+                    <div class="stat-box danger" id="box-fallos">
+                        <span class="stat-value" id="res-fallos">3</span>
+                        <span class="stat-label">Fallos</span>
+                    </div>
+                    <div class="stat-box neutral">
+                        <span class="stat-value" id="res-blancos">2</span>
+                        <span class="stat-label">En blanco</span>
+                    </div>
+                </div>
+                
+                <div id="penalty-info" class="penalty-info hidden">
+                    <p><strong>Aciertos Netos:</strong> <span id="res-netos"></span></p>
+                    <p class="small-text">Cada 3 fallos restan 1 acierto (-0.33 pts)</p>
+                </div>
+            </div>
+            
+            <button id="btn-home" class="btn-primary glow-effect">Volver al Inicio</button>
+        </section>
+    </div>
+
+    <!-- Cargar base de datos generada dinámicamente -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
