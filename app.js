@@ -52,7 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = document.createElement('button');
             btn.className = 'test-btn';
             btn.textContent = filename.replace('.txt', '').replace(/_/g, ' ');
-            btn.addEventListener('click', () => startTest(testData[filename], false));
+            btn.addEventListener('click', () => {
+                // Barajar las preguntas para que salgan en orden aleatorio
+                const shuffledQs = [...testData[filename]].sort(() => 0.5 - Math.random());
+                startTest(shuffledQs, false);
+            });
             testListContainer.appendChild(btn);
         });
         
